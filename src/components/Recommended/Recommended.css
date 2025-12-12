@@ -1,0 +1,87 @@
+.rec-container {
+  width: 100%;
+  padding: 40px 0 20px 0;
+  background: white;
+}
+
+.rec-header {
+  width: 90%;
+  margin: auto;
+  background: #f5a200;
+  padding: 12px 0;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.rec-grid {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.rec-item {
+  text-align: center;
+  width: 230px;
+}
+
+.rec-name {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.rec-price {
+  margin-top: 20px;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.rec-code {
+  margin-top: 10px;
+  color: #666;
+  font-size: 13px;
+}
+
+.rec-subtitle {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+  .rec-container {
+    padding: 0%;
+  }
+
+  .rec-header {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 0%;
+  }
+
+  .rec-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .rec-item {
+    width: 100% !important;
+    max-width: 170px;
+  }
+
+  .rec-subtitle {
+    display: none !important;
+  }
+}
